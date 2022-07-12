@@ -9,24 +9,24 @@ if (result !== expected) {
     throw new Error(`${result} is not equal to ${expected} `)
 };
 
-let resultTwo = getFullName(`John`, `Snow`);
-let expectedTwo = `John Snow`;
-if (resultTwo !== expectedTwo) {
-    throw new Error(`${resultTwo} is not equal to ${expectedTwo} `)
+result = getFullName(`John`, `Snow`);
+expected = `John Snow`;
+if (result !== expected) {
+    throw new Error(`${result} is not equal to ${expected} `)
 };
 
 function totalAmount(amount, taxRate) {
     return amount + (amount * taxRate);
 }
 
-let resultThree = totalAmount(200, 10);
-let expectedThree = 220;
-if (resultThree !== expectedThree) {
-    throw new Error (`${resultThree} is not equal to ${expectedThree}`)
+result = totalAmount(200, 10);
+expected = 220;
+if (result !== expected) {
+    throw new Error (`${result} is not equal to ${expected}`)
 };
 
-let resultFour = totalAmount(200, 10);
-let expectedFour = 2200;
-if (resultFour !== expectedFour) {
-    throw new Error (`${resultFour} is not equal to ${expectedFour}`)
+result = totalAmount(200, 10);
+expected = 2200;
+if (result !== expected) {
+    throw new Error (`${result} is not equal to ${expected}`)
 };
